@@ -5,7 +5,7 @@ class ConfissoesHandler {
 
     constructor() {
         // ⚙️ ID do grupo onde as confissões serão postadas
-        this.groupId = '120363407214428369@g.us';
+        this.groupId = '';
 
         // 🚫 LISTA DE PALAVRAS BLOQUEADAS
         this.palavrasBloqueadas = [
@@ -123,8 +123,8 @@ class ConfissoesHandler {
             }
 
             // 1️⃣ Salva no banco (apenas o conteúdo)
-            await pool.query(
-                'INSERT INTO confissoes (user_id, content) VALUES ($1, $2)',
+            const result = await pool.query(
+                'INSERT INTO confissoes (user_id, content) VALUES ($1, $2) RETURNING id',
                 [userId, confissao]
             );
 
@@ -133,6 +133,10 @@ class ConfissoesHandler {
                 text: textoGrupo,
                 mentions: mentionList
             });
+
+            // 2.1️⃣ Remove do banco após confirmação de envio no grupo
+            await pool.query('DELETE FROM confissoes WHERE id = $1', [result.rows[0].id]);
+            console.log(`🗑️ Confissão removida do banco (id: ${result.rows[0].id})`);
 
             // 3️⃣ Deleta a mensagem original do privado
             try {
