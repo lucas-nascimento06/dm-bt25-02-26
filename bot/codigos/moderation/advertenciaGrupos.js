@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 // ============================================
 const CONFIG = {
     URL_POSTER: 'https://raw.githubusercontent.com/LucasNascimento25/audio-regras/main/poster-regras.jpg',
-    URL_AUDIOS_JSON: 'https://raw.githubusercontent.com/LucasNascimento25/audio-regras/main/audios-regras.json',
+    URL_AUDIOS_JSON: 'https://raw.githubusercontent.com/lucas-nascimento06/audio-regras/refs/heads/main/audios-regras.json',
     DOWNLOAD_TIMEOUT: 30000,
     MAX_RETRIES: 3,
     DELAY_ENTRE_AUDIOS: 2000 // 2 segundos entre cada áudio

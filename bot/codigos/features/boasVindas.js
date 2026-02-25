@@ -39,7 +39,7 @@ async function buscarAudioSequencial() {
     // Atualiza cache se necessário
     if (!listaAudiosCache || (agora - ultimaAtualizacaoCache) > TEMPO_CACHE) {
       console.log("🔄 Atualizando cache de áudios...");
-      const jsonUrl = "https://raw.githubusercontent.com/LucasNascimento25/audio-bt-apresentacao/refs/heads/main/audios-apresentacao.json";
+      const jsonUrl = "https://raw.githubusercontent.com/lucas-nascimento06/audio-bt-apresentacao/refs/heads/main/audios-apresentacao.json";
       
       const response = await axios.get(jsonUrl, { timeout: 10000 });
       

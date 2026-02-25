@@ -1,7 +1,7 @@
 // signosHandler.js - Versão Otimizada com apenas 3 comandos
 import fetch from 'node-fetch';
 
-const URL_SIGNOS = 'https://raw.githubusercontent.com/LucasNascimento25/signos-taro/main/signos.json';
+const URL_SIGNOS = 'https://raw.githubusercontent.com/lucas-nascimento06/signos-taro/refs/heads/main/signos.json';
 const ADMIN_NUMBERS = ['5516981874405', '5521972337640', '5519997998496'];
 
 const SIGNOS_MAP = {

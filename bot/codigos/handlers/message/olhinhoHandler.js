@@ -16,7 +16,7 @@ const __dirname = path.dirname(__filename);
 console.log('✅ olhinhoHandler.js CARREGADO!');
 
 // URL CORRETA DO REPOSITÓRIO GITHUB
-const URL_AUDIOS_JSON = 'https://raw.githubusercontent.com/LucasNascimento25/olhinho-audio-bt/refs/heads/main/audios-bt.json';
+const URL_AUDIOS_JSON = 'https://raw.githubusercontent.com/lucas-nascimento06/audio-regras/refs/heads/main/audios-regras.json';
 
 // Cache dos áudios em memória
 let audios = [];
