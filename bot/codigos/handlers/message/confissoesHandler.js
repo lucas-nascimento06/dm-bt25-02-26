@@ -5,7 +5,7 @@ class ConfissoesHandler {
 
     constructor() {
         // ⚙️ ID do grupo onde as confissões serão postadas
-        this.groupId = '';
+        this.groupId = '120363419322682521@g.us';
 
         // 🚫 LISTA DE PALAVRAS BLOQUEADAS
         this.palavrasBloqueadas = [
