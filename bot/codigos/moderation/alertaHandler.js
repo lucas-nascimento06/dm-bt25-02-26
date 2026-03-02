@@ -16,8 +16,8 @@ console.log('✅ alertaHandler.js CARREGADO!');
 // CONFIGURAÇÕES
 // ============================================
 const CONFIG = {
-    URL_AUDIOS: 'https://raw.githubusercontent.com/LucasNascimento25/audio-regras/main/audios-regras.json',
-    URL_POSTER: 'https://raw.githubusercontent.com/LucasNascimento25/audio-regras/main/poster-regras.jpg',
+    URL_AUDIOS: 'https://raw.githubusercontent.com/lucas-nascimento06/audio-regras/refs/heads/main/audios-regras.json',
+    URL_POSTER: 'https://raw.githubusercontent.com/lucas-nascimento06/audio-regras/refs/heads/main/audios-regras.json',
     DOWNLOAD_TIMEOUT: 30000,
     MAX_RETRIES: 3,
     DELAY_ENTRE_AUDIOS: 2000, // 2 segundos entre cada áudio
